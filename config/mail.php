@@ -113,4 +113,8 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'owner' => [
+        'address' => env('MAIL_OWNER_ADDRESS', ''),
+    ],
+
 ];
