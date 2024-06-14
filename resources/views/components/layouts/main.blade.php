@@ -41,7 +41,7 @@
     <div id="hdr-logo">
       <a href="https://www.dellasantapsicologo.it" target="_blank">
         <img
-            class="fluid-img" src="{{asset('/images/logo-without-text.png')}}" alt="logo del sito"
+            class="fluid-img" src="{{asset('/images/Logo.webp')}}" alt="logo del sito"
             style="padding-left: 4px"
         >
       </a>
@@ -154,7 +154,7 @@
   <section id="contatti">
     <div class="container d-flex-md">
       <div class="col-50 tablet">
-        <img src="{{asset('images/Logo_450x112.webp')}}" alt="Logo" loading="lazy" width="450px" height="111px">
+        <img src="{{asset('images/Logo.webp')}}" alt="Logo" loading="lazy" width="450px" height="111px">
       </div>
       <div class="col-50 d-flex-lg">
         <div class="col-50 mb-50">
