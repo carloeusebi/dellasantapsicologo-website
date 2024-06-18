@@ -6,7 +6,6 @@ use App\Mail\ContactFormMail;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
 use Livewire\Attributes\Validate;
@@ -46,7 +45,7 @@ class ContactForm extends Component
             $this->reset();
             $this->dispatch('message', status: 'success', message: 'Email inviata con successo!.');
         } catch (Exception $e) {
-            Log::error($e->getMessage());
+            report($e);
             $this->dispatch(
                 'message',
                 status: 'error',
