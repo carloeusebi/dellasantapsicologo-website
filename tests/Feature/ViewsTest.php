@@ -4,8 +4,6 @@
 test('homepage', function () {
     $response = $this->get('/');
 
-    $response->dd();
-
     $response
         ->assertStatus(200)
         ->assertViewIs('home')
