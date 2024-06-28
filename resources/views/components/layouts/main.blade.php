@@ -39,7 +39,7 @@
 <header id="top-header" x-data="{open: false}">
   <div class="container d-flex justify-space-between align-center">
     <div id="hdr-logo">
-      <a href="https://www.dellasantapsicologo.it" target="_blank">
+      <a href="https://www.dellasantapsicologo.it">
         <img
             class="fluid-img" src="{{asset('/images/Logo.webp')}}" alt="logo del sito"
             style="padding-left: 4px"
