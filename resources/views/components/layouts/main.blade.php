@@ -2,9 +2,22 @@
 <html lang="it">
 
 <head>
-  <!-- Google Tag Manager -->
 
-  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PPT73ZG');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,10 +44,14 @@
   @vite(['resources/css/app.scss', 'resources/css/my-library.css'])
 </head>
 
+<body>
 
 <!-- Google Tag Manager (noscript) -->
-
-<!-- End Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPT73ZG"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header id="top-header" x-data="{open: false}">
   <div class="container d-flex justify-space-between align-center">
@@ -270,3 +287,4 @@
 </script>
 <!--suppress HtmlUnknownAttribute, JSUnresolvedLibraryURL -->
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8"  async></script>
+</body>
