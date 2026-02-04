@@ -54,7 +54,7 @@ it('handles email sending failures', function () {
         ->set('message', 'message')
         ->set('accepted', true)
         ->call('sendEmail')
-        ->assertDispatched('message',
+        ->assertDispatched('message-sent',
             message: 'Errore durante l\'invio della email. Si prega di riprovare più tardi.',
             status: 'error',
             details: 'Mail server is down'
