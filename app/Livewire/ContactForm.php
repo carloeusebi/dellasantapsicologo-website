@@ -43,11 +43,11 @@ class ContactForm extends Component
                 $this->message
             ));
             $this->reset();
-            $this->dispatch('message', status: 'success', message: 'Email inviata con successo!.');
+            $this->dispatch('message-sent', status: 'success', message: 'Email inviata con successo!.');
         } catch (Exception $e) {
             report($e);
             $this->dispatch(
-                'message',
+                'message-sent',
                 status: 'error',
                 message: 'Errore durante l\'invio della email. Si prega di riprovare più tardi.',
                 details: $e->getMessage(),

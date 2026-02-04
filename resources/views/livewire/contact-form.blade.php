@@ -109,7 +109,8 @@
   <!--suppress JSUnresolvedReference -->
   <div
       x-data="{open: false, status: '', message: ''}"
-      @message.window="
+      x-on:message-sent.window="
+          if (!$event.detail.message) return;
           open = true;
           message = $event.detail.message;
           status = $event.detail.status;
